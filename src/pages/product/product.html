@@ -1,0 +1,33 @@
+<!--
+  Generated template for the ProductPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>{{myproduct?.name || 'Product 등록'}}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-item>
+    <ion-label>Id: {{myproduct.id}}</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label>Name:</ion-label>
+    <ion-input type="text" [(ngModel)]="myproduct.name"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Cost:</ion-label>
+    <ion-input type="number" [(ngModel)]="myproduct.cost"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Quantity: </ion-label>
+    <ion-input type="number" [(ngModel)]="myproduct.quantity"></ion-input>
+  </ion-item>
+
+</ion-content>
